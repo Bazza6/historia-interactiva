@@ -1,10 +1,13 @@
-import "./Escena.css"
+import "./Escena.css";
+//import styled from 'styled-components';
+import P from "../P";
 
 const Escena = (props) => {
 
     return (
-        <p>{props.frase}</p>
+        <P>{props.frase}</P>
     )
 };
+
 
 export default Escena;
