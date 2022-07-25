@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Escena from './components/escena/Escena';
+
 
 function App() {
+
+  const text = "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial";
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Escena testo={text} />
     </div>
   );
-}
+};
 
 export default App;
