@@ -1,15 +1,15 @@
 import './App.css';
 import Escena from './components/escena/Escena';
-
+import frases from './frases';
 
 function App() {
 
-  const text = "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial";
-
-
   return (
     <div>
-      <Escena testo={text} />
+      <Escena frase={frases[0]} />
+      <Escena frase={frases[1]} />
+      <Escena frase={frases[2]} />
+      <Escena frase={frases[3]} />
     </div>
   );
 };
