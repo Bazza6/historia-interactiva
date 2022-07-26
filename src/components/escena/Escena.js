@@ -1,11 +1,14 @@
-import "./Escena.css";
+//import "./Escena.css";
 //import styled from 'styled-components';
+
 import P from "../P";
 
 const Escena = (props) => {
-
     return (
-        <P>{props.frase}</P>
+        <div>
+            <P selected={props.selected}>{props.frase}</P>
+        </div>
+
     )
 };
 
