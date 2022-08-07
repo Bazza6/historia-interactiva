@@ -1,9 +1,11 @@
-import './App.css';
+//import './App.css';
 import Escena from './components/escena/Escena';
 import frases from './frases';
-import { Button } from './components/Styled-components/Styled';
+import { Button, StyledBackground } from './components/Styled-components/Styled';
 import { useState } from 'react';
 import Benvingut from './components/benvingut/Benvingut';
+import Background from './components/escena/Background';
+
 
 function App() {
 
@@ -16,37 +18,22 @@ function App() {
 
   const seguent = () => (index < 3) && setIndex(prevIndex => prevIndex + 1);
 
+  console.log(index, isWelcome);
 
   return (
 
     <>
       {(isWelcome === false) && <Benvingut onClick={enter} />}
-      {(isWelcome === true) && <div>
+      {(isWelcome === true) && <StyledBackground num={index + 1}>
         <Button onClick={anterior}>anterior</Button>
         <Button onClick={seguent}>següent</Button>
 
-        <Escena frase={frases[0]} selected={index === 0 ? true : false} />
-        <Escena frase={frases[1]} selected={index === 1 ? true : false} />
-        <Escena frase={frases[2]} selected={index === 2 ? true : false} />
-        <Escena frase={frases[3]} selected={index === 3 ? true : false} />
-      </div>}
+        <Escena frase={frases[0].txt} selected={index === 0 ? true : false} />
+        <Escena frase={frases[1].txt} selected={index === 1 ? true : false} />
+        <Escena frase={frases[2].txt} selected={index === 2 ? true : false} />
+        <Escena frase={frases[3].txt} selected={index === 3 ? true : false} />
+      </StyledBackground>}
     </>
-
-
-    /*     <>
-              <Benvingut />
-          <div>
-            <Button onClick={anterior}>anterior</Button>
-            <Button onClick={seguent}>següent</Button>
-    
-            <Escena frase={frases[0]} selected={index === 0 ? true : false} />
-            <Escena frase={frases[1]} selected={index === 1 ? true : false} />
-            <Escena frase={frases[2]} selected={index === 2 ? true : false} />
-            <Escena frase={frases[3]} selected={index === 3 ? true : false} />
-          </div>
-        </> */
-
-
 
   );
 };

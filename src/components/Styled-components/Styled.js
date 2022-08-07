@@ -16,21 +16,33 @@ border-radius: 20px;
 
 
 const StyledP = styled.p`
-margin: 20px;
+max-width: 1000px;
+margin: auto;
+margin-top: 20px;
 border: 1px black solid;
 padding: 1rem;
 border-radius: 2rem;
 text-align: center;
-background-color: ${({ selected }) => selected ? "pink" : "transparent"};
+background-color: ${({ selected }) => selected ? "pink" : "rgba(255, 255, 255, 0.6)"};
 `;
 
-const Background = styled.div`
+const WelcomeBackground = styled.div`
 height: 100vh;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
+align-items:center ;
 background-color: saddlebrown;
 `;
 
-export { Button, StyledP, Background, ButtonBenvingut };
+const StyledBackground = styled.div`
+  width: 100%;
+  height: 100vh;
+  //background-image: url("img/2.jpg");
+  background-image: ${({ num }) => `url(img/${num}.jpg)`};
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+export { Button, StyledP, WelcomeBackground, ButtonBenvingut, StyledBackground };
