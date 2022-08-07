@@ -1,16 +1,9 @@
-//import "./Escena.css";
-//import styled from 'styled-components';
-
-import P from "../P";
+import { StyledP } from "../Styled-components/Styled";
 
 const Escena = (props) => {
     return (
-        <div>
-            <P selected={props.selected}>{props.frase}</P>
-        </div>
-
+        <StyledP selected={props.selected}>{props.frase}</StyledP>
     )
 };
-
 
 export default Escena;
