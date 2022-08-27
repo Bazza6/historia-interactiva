@@ -1,11 +1,8 @@
-//import './App.css';
 import Escena from './components/escena/Escena';
 import frases from './frases';
 import { Button, StyledBackground } from './components/Styled-components/Styled';
 import { useState } from 'react';
 import Benvingut from './components/benvingut/Benvingut';
-import Background from './components/escena/Background';
-
 
 function App() {
 
@@ -18,13 +15,10 @@ function App() {
 
   const seguent = () => (index < 3) && setIndex(prevIndex => prevIndex + 1);
 
-  console.log(index, isWelcome);
-
   return (
-
     <>
       {(isWelcome === false) && <Benvingut onClick={enter} />}
-      {(isWelcome === true) && <StyledBackground num={index + 1}>
+      {(isWelcome === true) && <StyledBackground background={frases[index].img}>
         <Button onClick={anterior}>anterior</Button>
         <Button onClick={seguent}>següent</Button>
 
@@ -34,7 +28,6 @@ function App() {
         <Escena frase={frases[3].txt} selected={index === 3 ? true : false} />
       </StyledBackground>}
     </>
-
   );
 };
 
