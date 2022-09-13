@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/historia-interactiva/static/js/main.67fcd494.js",
+    "static/js/787.78d7016e.chunk.js": "/historia-interactiva/static/js/787.78d7016e.chunk.js",
+    "static/media/4.jpg": "/historia-interactiva/static/media/4.2995f9ca0920650627ca.jpg",
+    "static/media/3.jpg": "/historia-interactiva/static/media/3.bb53871cc174f4ca528e.jpg",
+    "static/media/1.jpg": "/historia-interactiva/static/media/1.7e7a855bd1d2da50d556.jpg",
+    "static/media/2.jpg": "/historia-interactiva/static/media/2.a53acf76d831e32a3a4e.jpg",
+    "index.html": "/historia-interactiva/index.html",
+    "main.67fcd494.js.map": "/historia-interactiva/static/js/main.67fcd494.js.map",
+    "787.78d7016e.chunk.js.map": "/historia-interactiva/static/js/787.78d7016e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.67fcd494.js"
+  ]
+}
